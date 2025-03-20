@@ -122,7 +122,7 @@ bool operator>=(const Rational& obj1, const Rational& obj2) {
 
 std::ostream& operator<<(std::ostream& os, const Rational& obj) {
     if (obj.denominator_ == 1) {
-        os << obj.denominator_;
+        os << obj.numerator_;
     } else {
         os << obj.numerator_ << '/' << obj.denominator_;
     }
